@@ -1,0 +1,24 @@
+{
+  "name": "views-node-homeWork",
+  "version": "1.0.0",
+  "description": "We're going to create a personal website with the following pages: Home About Blog",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chamon562/views-node-homeWork.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chamon562/views-node-homeWork/issues"
+  },
+  "homepage": "https://github.com/chamon562/views-node-homeWork#readme"
+}
