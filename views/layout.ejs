@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAVES & Hates</title>
+</head>
+<body>
+    <ul>
+        <li><a href="about">This is my about page</a></li>
+        <li><a href="blog">This is my blog</a></li>
+    <!-- remember in the links not to have .ejs -->
+        <li><a href='/faves/foods'>Favorite Foods</a></li>
+        <li><a href='/faves/animals'>Favorite Animals</a></li>
+        <li><a href='/hates/animals'>Least Favorite Foods</a></li>
+        <li><a href='/hates/foods'>Least Favorite Animals</a></li>
+      </ul>
+
+    <%- body%>
+    
+</body>
+</html>

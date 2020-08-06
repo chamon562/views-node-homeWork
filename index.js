@@ -1,18 +1,22 @@
 const express = require('express')
 const app = express()
+let ejsLayouts = require('express-ejs-layouts')
 //set takes 2 arguments the name of what we are setting and the value
 // setting view engine the value is ejs
 //tell express taht were going to use ejs as the view engine
 //adapt our views to ejs files 
 app.set('view engine', 'ejs')
-
-
+app.use(ejsLayouts)
+//every route that we hit inside this controllers is going to have /faves as its url patern
+app.use('/faves', require('./controllers/faves'))
+app.use('/hates', require('./controllers/hates'))
 //need route for index this is the home route too 
 // http://localhost:8000/
 // prints This is the Home Page! on web page
 app.get('/', function(req, res) {
+    res.render('Home')
     //ready to recieve a template res.render() no need for absolute file path just the name of the file dont need ejs extention
-    res.render('index',{name: 'Sterling Archer', age: 35} )//express will look inside views folder by default for an ejs file with this name
+    // res.render('index',{name: 'Sterling Archer', age: 35} )//express will look inside views folder by default for an ejs file with this name
     // res.send('This is the Home Page!')
     //string concatination (__dirname+'/views/index.html');
     // res.sendFile(__dirname+'/views/index.html');
