@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Channee Math Index</title>
+</head>
+<body>
+
+    <%- include('../partials/header.ejs') %>
+    
+    <h1>Hello, <%= name%>!</h1>
+    <%let dogAge = age*7 %>
+    <h2>You are <%= dogAge*7 %> in dog years!</h2>
+    <% let status %>
+    <% if(dogAge<100) { %>
+        <% status = 'young' %>
+        
+        <%} else {%>
+            <% status = 'old' %>
+            
+            <% } %>
+            <%#comment %>
+            <!-- want to render %= status% -->
+            <h3>THIS means you are <%= status%>!</h3>
+            
+            
+            <%- include('../partials/footer.ejs') %>
+        </body>
+        </html>
